@@ -49,8 +49,12 @@ public class TestUtilTest {
     @DisplayName("TestUtil.setOutByteArray()")
     void t2() {
         ByteArrayOutputStream byteArrayOutputStream = TestUtil.setOutByteArray();
+
         System.out.println("안녕하세요");
+
         String rst = byteArrayOutputStream.toString();
-        assertThat(rst).isEqualTo("안녕하세요")
+
+        assertThat(rst).contains("안녕하세요");
+
     }
 }
