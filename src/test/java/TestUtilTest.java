@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.ByteArrayOutputStream;
 import java.util.Scanner;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -38,10 +39,18 @@ public class TestUtilTest {
 //                작자미상
 //                """);
 
-// // "아까 받아온 결과(out) 안에 아래 글자들이 포함되어 있는지 확인해 줘."
+    // // "아까 받아온 결과(out) 안에 아래 글자들이 포함되어 있는지 확인해 줘."
 //        assertThat(out)
 //                .contains("명언 :")
 //                .contains("작가 :")
 //                .contains("1번 명언이 등록되었습니다.");
 //    }
+    @Test
+    @DisplayName("TestUtil.setOutByteArray()")
+    void t2() {
+        ByteArrayOutputStream byteArrayOutputStream = TestUtil.setOutByteArray();
+        System.out.println("안녕하세요");
+        String rst = byteArrayOutputStream.toString();
+        assertThat(rst).isEqualTo("안녕하세요")
+    }
 }
