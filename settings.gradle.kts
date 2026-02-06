@@ -1,0 +1,1 @@
+rootProject.name = "study-14492-260205"
