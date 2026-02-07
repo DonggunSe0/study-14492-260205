@@ -10,7 +10,7 @@ public class AppTest {
 
    @Test
    @DisplayName("'== 명언 앱 ==' 출력")
-    void t1() {
+    void t1()  {
         //명언앱 출력
         Scanner sc = TestUtil.genScanner("종료");
 
