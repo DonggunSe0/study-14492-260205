@@ -9,7 +9,7 @@ public class TestUtil {
     }
 
     public static ByteArrayOutputStream setOutByteArray() {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(); //=> 창고만들기
         PrintStream printStream = new PrintStream(byteArrayOutputStream); //printstream 기능 => 창고안에 넣기
 
         System.setOut(printStream); //setout을 통해 모니터 대신 printstream 기능으로 byteArrayOutputStream에 저장
