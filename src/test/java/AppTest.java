@@ -49,4 +49,17 @@ public class AppTest {
 
         assertThat(out).contains("1번 명령이 등록 되었습니다.");
     }
+
+    @Test
+    @DisplayName("등록 시 명령 등록 번호 증가 후 노출")
+    void t4() {
+        String out = AppTestRunner.run(""" 
+                등록
+                현재를 사랑하라.
+                작자미상
+                """
+        );
+
+        assertThat(out).contains("2번 명령이 등록 되었습니다.");
+    }
 }
