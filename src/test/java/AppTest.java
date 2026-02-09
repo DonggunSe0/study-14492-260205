@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.util.Scanner;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AppTest {
@@ -12,12 +9,13 @@ public class AppTest {
    @DisplayName("'== 명언 앱 ==' 출력")
     void t1()  {
         //명언앱 출력
-        Scanner sc = TestUtil.genScanner("종료");
 
-       ByteArrayOutputStream outputStream = TestUtil.setOutByteArray();
-       new App(sc).run();
+       String out = AppTestRunner.run("""
+                종료
+                """
+       ); // == 명언 앱==
 
-       String out = outputStream.toString();
+
        assertThat(out).contains("== 명언 앱==");
     }
 }
