@@ -47,6 +47,6 @@ public class AppTest {
                 """
         );
 
-        assertThat(out).contains("1번 명령이 등록 되었습니다.")
+        assertThat(out).contains("1번 명령이 등록 되었습니다.");
     }
 }

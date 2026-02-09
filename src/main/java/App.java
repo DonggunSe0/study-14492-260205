@@ -13,6 +13,8 @@ public class App {
         System.out.println("명령) ");
         String cmd = sc.nextLine();
 
+        System.out.println("1번 명령이 등록 되었습니다.");
+
         switch (cmd){
             case "등록"->{System.out.println("명언 : ");
                 String saying = sc.nextLine();
