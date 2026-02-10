@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import test.TestUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.util.Scanner;
@@ -14,7 +15,7 @@ public class TestUtilTest {
         //테스트 코드에서 매번 new Scanner(...)를 쓰는 것보다, TestUtil.genScanner(...)라고 쓰면
         // 이건 테스트를 위해 스캐너를 만드는 거구나"**라고 의도를 더 명확하게 알 수 있습니다.
         //중복을 줄이고 편하게 쓰기 위해
-        Scanner scanner = TestUtil.genScanner("""
+        Scanner scanner = test.TestUtil.genScanner("""
                 등록
                 현재를 사랑하라.
                 작자미상
@@ -46,7 +47,7 @@ public class TestUtilTest {
 //                .contains("1번 명언이 등록되었습니다.");
 //    }
     @Test
-    @DisplayName("TestUtil.setOutByteArray()")
+    @DisplayName("test.TestUtil.setOutByteArray()")
     void t2() {
         ByteArrayOutputStream byteArrayOutputStream = TestUtil.setOutByteArray();
 
