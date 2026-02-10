@@ -1,8 +1,11 @@
+package wiseSaying.controller;
+
+import wiseSaying.entity.WiseSaying;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//WiseSayingController 사실 해당 wiseSaying 기능 자체를 담당하는 부분
 public class WiseSayingController {
     private Scanner sc;
     private List<WiseSaying> wiseSayings = new ArrayList<>();

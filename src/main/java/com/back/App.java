@@ -1,13 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
+package com.back;
+
+import system.controller.SystemController;
+import wiseSaying.controller.WiseSayingController;
+
 import java.util.Scanner;
 
 public class App {
     private Scanner sc;
     private WiseSayingController wiseSayingController ;
     private SystemController systemController ;
-    List<WiseSaying> wiseSayings = new ArrayList<>();
-
 
     public App(Scanner sc) {
         this.sc = sc;
@@ -20,16 +21,16 @@ public class App {
         System.out.println("== 명언 앱=="); //outputStream에 저장됨 다시돌아가바 =>App
 
         //추가 등록을 위한 반복문
-    while (true){
-        System.out.println("명령) ");
-        String cmd = sc.nextLine();
-        switch (cmd){
-            case "등록"->{wiseSayingController.actionAdd();}
-            case "목록" ->{wiseSayingController.actionList();}
-            case "종료"->{ systemController.actionExit();
-                return ;}
+        while (true){
+            System.out.println("명령) ");
+            String cmd = sc.nextLine();
+            switch (cmd){
+                case "등록"->{wiseSayingController.actionAdd();}
+                case "목록" ->{wiseSayingController.actionList();}
+                case "종료"->{ systemController.actionExit();
+                    return ;}
 
+            }
         }
-    }
     }
 }
