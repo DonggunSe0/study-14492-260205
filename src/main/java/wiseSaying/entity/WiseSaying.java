@@ -12,6 +12,18 @@ public class WiseSaying {
         this.author = author;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setSaying(String saying) {
+        this.saying = saying;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     public int getId() {
         return id;
     }
@@ -22,5 +34,9 @@ public class WiseSaying {
 
     public String getAuthor() {
         return author;
+    }
+
+    public boolean isNew() {
+        return id == 0;
     }
 }
