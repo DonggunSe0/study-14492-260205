@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class AppTestRunner {
     public static String run(String input) {
-        Scanner sc = test.TestUtil.genScanner(input+"\n종료"); //종료는 입력임
+        Scanner sc = test.TestUtil.genScanner(input+"\n종료");
 
         ByteArrayOutputStream outputStream = test.TestUtil.setOutByteArray(); //=>여기에서 정의 했잖아
 
