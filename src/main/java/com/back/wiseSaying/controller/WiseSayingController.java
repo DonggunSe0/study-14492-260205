@@ -1,7 +1,7 @@
-package wiseSaying.controller;
+package com.back.wiseSaying.controller;
 
-import wiseSaying.entity.WiseSaying;
-import wiseSaying.service.WiseSayingService;
+import com.back.wiseSaying.entity.WiseSaying;
+import com.back.wiseSaying.service.WiseSayingService;
 
 import java.util.Scanner;
 

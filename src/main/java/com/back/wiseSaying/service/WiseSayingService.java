@@ -1,7 +1,8 @@
-package wiseSaying.service;
+package com.back.wiseSaying.service;
 
-import wiseSaying.entity.WiseSaying;
-import wiseSaying.repository.WiseSayingRepository;
+import com.back.global.AppContext;
+import com.back.wiseSaying.entity.WiseSaying;
+import com.back.wiseSaying.repository.WiseSayingRepository;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class WiseSayingService {
     private WiseSayingRepository wiseSayingRepository;
 
     public WiseSayingService() {
-        this.wiseSayingRepository = new WiseSayingRepository();
+        this.wiseSayingRepository = AppContext.wiseSayingRepository;
     }
 
     public WiseSaying write(String content, String author) {

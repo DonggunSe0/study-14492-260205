@@ -1,6 +1,6 @@
-package wiseSaying.repository;
+package com.back.wiseSaying.repository;
 
-import wiseSaying.entity.WiseSaying;
+import com.back.wiseSaying.entity.WiseSaying;
 
 import java.util.ArrayList;
 import java.util.List;
